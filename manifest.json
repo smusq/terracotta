@@ -1,0 +1,53 @@
+{
+	"format_version": 2,
+	"metadata": {
+		"authors": [
+			"smusq"
+		],
+		"url": "https://github.com/smusq/terracotta",
+		"license": "MIT"
+	},
+	"header": {
+		"name": "Terracotta",
+		"description": "Minecraft Bedrock Behavior Pack for correcting incorrect player actions.",
+		"min_engine_version": [
+			1,
+			21,
+			0
+		],
+		"uuid": "ff06c889-75b1-4450-a7da-bf79aaef881c",
+		"version": [
+			0,
+			0,
+			1
+		]
+	},
+	"modules": [
+		{
+			"type": "data",
+			"uuid": "0ec3d059-8b61-47a3-abc2-4c5f3160d6e6",
+			"version": [
+				1,
+				0,
+				0
+			]
+		},
+		{
+			"type": "script",
+			"language": "javascript",
+			"uuid": "caa5a596-7a3a-4a54-a273-9a180f7aeaba",
+			"entry": "scripts/main.js",
+			"version": [
+				1,
+				0,
+				0
+			]
+		}
+	],
+	"dependencies": [
+		{
+			"module_name": "@minecraft/server",
+			"version": "1.16.0-beta"
+		}
+	]
+}
