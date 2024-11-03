@@ -1,6 +1,6 @@
 import { Player, world } from "@minecraft/server";
 
-const illegalCharacters = [
+export const illegalCharacters = [
     "§", // Used for colored text
     ":_input_key.jump:", // Jump Emoji Input Key
     ":_input_key.sneak:", // Sneak Emoji Input Key
@@ -15,7 +15,7 @@ const illegalCharacters = [
     ":_input_key.cycleItemRight:", // Cycle Item Right Emoji Input Key
     ":_input_key.use:", // Use Emoji Input Key
     ":_input_key.drop:", // Drop Emoji Input Key
-    ":_input_key.codeBuilder:", // Code Builder Emoji Input
+    ":_input_key.codeBuilder:", // Code Builder Emoji Input Key
     "", // Food Emoji
     "", // Armor Emoji
     "", // Heart Emoji
@@ -148,4 +148,4 @@ world.beforeEvents.chatSend.subscribe(event => {
     if (illegalCharacters.some(illegalCharacters => message.includes(illegalCharacters))) {
         event.cancel = true;
     }
-})
+});

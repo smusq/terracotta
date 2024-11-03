@@ -5,7 +5,7 @@
 			"identifier": "minecraft:player",
 			"spawn_category": "creature",
 			"is_spawnable": false,
-			"is_summonable": false
+			"is_summonable": true
 		},
 		"component_groups": {
 			"minecraft:add_raid_omen": {

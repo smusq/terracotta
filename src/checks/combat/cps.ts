@@ -45,7 +45,7 @@ world.afterEvents.entityHitEntity.subscribe(event => {
             console.warn("Failed to add Instant Health to Victim");
         }
     }
-})
+});
 
 system.runInterval(() => {
     for (const player of world.getAllPlayers()) {

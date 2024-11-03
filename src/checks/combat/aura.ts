@@ -7,4 +7,4 @@ world.afterEvents.entityHitEntity.subscribe(event => {
     if (attacker.typeId !== "minecraft:player") return;
 
     // This file is incomplete and is being worked on.
-})
+});
